@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  <title>landing page test Rebeka</title>
+  
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="company">DERB</h1>
+  <div class="menu-header">  
+    <nav class="menu-hamburguer"> 
+      <input class="icon-menu" id="menu-hamburguer" type="checkbox" />
+      <label for="menu-hmaburguer"> 
+       <div class="menu">
+          <span class="hamburguer"></span>
+          </div>
+      </label>
+      
+      <ul style="text-decoration:none" class="menu-hamburguer-elements"> 
+       <li><a href='#'>Contato</a></li>
+       <li><a href='#'>Sobre Nós</a></li>
+       <li><a href='#'>Produtos</a></li>
+      </ul>
+    
+    </nav>
+   </div>
+  <!-- Old code for Menu with buttons
+    <div class="menu">
+    <button class="menubutton" href="#">Contato</button>
+    <button class="menubutton" href="#">Sobre nós</button>
+    <button class="menubutton" href="#">Produtos</button>
+    </div>
+  -->  
+    
+  </div>
+  
+  
+  <div class="body">
+   <div class="body1">
+     conte-me o que gostaria de falar sobre a sua empresa aqui<br>
+     ou alguma mensagem que deseja mostrar ao seu cliente<br>
+     a fonte, a cor e tudo aqui pode ser alterado também.
+   </div>
+   <div class="body2">
+     <form id='myForm' action="mailto:test@gmail.com" method="POST" enctype="text/plain">
+       <label for="name">Nome e Sobrenome</label>
+       <input class="boxinfo" type="text" id="name" placeholder="escreva seu nome">
+       
+       <label for="email">Email </label>
+       <input class="boxinfo" type="text" id="email" placeholder="escreva seu email">
+       
+       <label for="number">Número</label>
+       <input class="boxinfo" type="text" id="phone" inputmask="'mask':'(11)11111-1111'" placeholder="digite seu número">
+       
+       <label for="message">Mensagem</label>
+       <textarea cols="31" rows="5" id="message" placeholder="digite a sua dúvida que entraremos em contato" class="message"></textarea> 
+  <!--input nao permite quebrar o texto, ficar em linhas, entao tive que mudar para textarea     
+       <input class="message" type="text" id="message" placeholder="digite sua mensagem" aria-multiline="true">
+  -->      
+        <p id="result"></p>
+        
+        <input type="submit" value="Enviar pedido de contato" class="enviar">
+        
+  <!--talvez depois no final no input precise de um / com > "/>"--> 
+       
+     </form>
+   </div>
+  </div>
+  <div class="footer">
+    <p></p>
+  </div>
+  
+  <script src="JSfiles/contact.js"></script>
+
+</body>
+
+</html>
